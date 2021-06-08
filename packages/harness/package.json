@@ -1,0 +1,25 @@
+{
+  "name": "@hyper63/nano-harness",
+  "version": "0.0.1",
+  "description": "Utilities for extending a hyper config file",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hyper63/adapter-fs": "^1.0.4",
+    "@hyper63/adapter-hooks": "^1.0.2",
+    "@hyper63/adapter-memory": "^1.2.1",
+    "@hyper63/adapter-minisearch": "^1.0.7",
+    "@hyper63/adapter-pouchdb": "^1.1.8",
+    "@hyper63/adapter-zmq": "^0.0.3",
+    "@hyper63/app-express": "^1.1.1",
+    "@hyper63/config-utils": "^0.0.1",
+    "@hyper63/core": "^1.3.1",
+    "dotenv": "^10.0.0"
+  },
+  "authors": [
+    "Tyler Hall <tyler@hyper.io>"
+  ]
+}
