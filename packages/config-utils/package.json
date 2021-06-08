@@ -1,0 +1,16 @@
+{
+  "name": "@hyper63/config-utils",
+  "version": "0.0.1",
+  "description": "Utilities for extending a hyper config file",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "authors": [
+    "Tyler Hall <tyler@hyper.io>"
+  ]
+}
