@@ -1,5 +1,7 @@
 import { R } from "../deps.js";
 
+import validate from "./plugin-schema.js";
+
 const {
   applyTo,
   filter,
@@ -53,7 +55,6 @@ function linkPlugins(plugins, adapterConfig) {
       applyTo(adapterConfig),
     ),
     map((plugin) => plugin.link.bind(plugin)),
-    filter((plugin) => is(Function, plugin.link)),
   )(plugins);
 }
 
@@ -62,6 +63,8 @@ function initAdapter(portAdapter) {
   return compose(
     (adapterConfig) => linkPlugins(plugins, adapterConfig),
     loadAdapterConfig,
+    // Validate schema of each plugin factory
+    map(validate),
   )(plugins || []);
 }
 

@@ -12,7 +12,7 @@ export default function (plugin) {
       .args(z.any().optional())
       .returns(z.any()),
     link: z.function()
-      .args(z.any())
+      .args(z.any().optional())
       .returns(
         z.function()
           .args(z.any())
